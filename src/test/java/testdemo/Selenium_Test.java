@@ -28,6 +28,6 @@ WebDriver driver;
         driver.get("https://www.google.com/");
         String title = driver.getTitle();
         System.out.println(title);
-        assertEquals(expectedTitle, title);
+        assertEquals(expectedTitle, driver.getTitle());
     }
 }
